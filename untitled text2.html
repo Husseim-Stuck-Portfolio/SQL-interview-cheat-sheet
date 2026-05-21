@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-019QXX9HVP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-019QXX9HVP');
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MQCV3M84');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="description" content="Husseim Stuck - Data Engineer & Geospatial Data Specialist in Berlin. Expert in Python, SQL, Snowflake, Tableau, QGIS.">
+  <title>Husseim Stuck - Data Engineer Berlin | Geospatial Data & Analytics Specialist</title>
+  
+  <style>
+    :root {
+      --color-primary-dark: #0f1419;
+      --color-primary-blue: #0d47a1;
+      --color-accent-teal: #00c4a1;
+      --color-accent-cyan: #00d9ff;
+      --color-neutral-light: #f8f9fa;
+      --color-neutral-gray: #6b7280;
+      --color-text-dark: #1a1f2e;
+      --color-text-light: #ffffff;
+      
+      --font-display: 'Segoe UI', 'Helvetica Neue', system-ui, sans-serif;
+      --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --font-mono: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+      
+      --space-xs: 0.5rem;
+      --space-sm: 1rem;
+      --space-md: 1.5rem;
+      --space-lg: 2rem;
+      --space-xl: 3rem;
+      --space-2xl: 4rem;
+      
+      --text-xs: clamp(0.75rem, 1vw, 0.875rem);
+      --text-sm: clamp(0.875rem, 1.2vw, 1rem);
+      --text-base: clamp(1rem, 1.5vw, 1.125rem);
+      --text-lg: clamp(1.125rem, 2vw, 1.5rem);
+      --text-xl: clamp(1.5rem, 3vw, 2rem);
+      --text-2xl: clamp(2rem, 4vw, 2.5rem);
+      --text-3xl: clamp(2.5rem, 5vw, 3.5rem);
+      
+      --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+      --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.15);
+      --shadow-xl: 0 20px 48px rgba(0, 0, 0, 0.2);
+      
+      --transition-fast: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+      --transition-smooth: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+      
+      --max-width: 1200px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--color-text-dark);
+      background: var(--color-neutral-light);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    .video-background-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -2;
+      overflow: hidden;
+      background-color: var(--color-primary-dark);
+    }
+
+    #earth-video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      /* Initialize transform origin for zooming */
+      transform-origin: center center;
+      /* will-change optimizes animation performance */
+      will-change: transform; 
+    }
+
+    .video-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      /* Gradient overlay to ensure text readability and blend */
+      background: linear-gradient(
+        to bottom, 
+        rgba(15, 20, 25, 0.4) 0%, 
+        rgba(15, 20, 25, 0.8) 100%
+      );
+      z-index: -1;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(15, 20, 25, 0.8);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      z-index: 1000;
+      transition: background var(--transition-smooth);
+    }
+
+    nav {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: var(--space-md) var(--space-lg);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: var(--text-xl);
+      font-weight: 800;
+      color: var(--color-text-light);
+      text-decoration: none;
+      letter-spacing: -0.5px;
+      font-family: var(--font-display);
+    }
+
+    .logo span { color: var(--color-accent-teal); }
+
+    .nav-links {
+      display: flex;
+      gap: var(--space-lg);
+      list-style: none;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: var(--color-text-light);
+      text-decoration: none;
+      font-size: var(--text-sm);
+      font-weight: 500;
+      transition: color var(--transition-fast);
+      position: relative;
+    }
+
+    .nav-links a:hover { color: var(--color-accent-teal); }
+
+    .hero {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 var(--space-lg);
+      /* Full viewport height to act as a window to the video */
+      height: 100vh; 
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-2xl);
+      align-items: center;
+      position: relative;
+      /* Padding top to account for fixed header */
+      padding-top: 80px; 
+    }
+
+    .hero-content {
+      /* will-change for smooth scroll fading */
+      will-change: opacity, transform;
+    }
+
+    .hero-content h1 {
+      font-size: var(--text-3xl);
+      font-weight: 900;
+      line-height: 1.1;
+      letter-spacing: -1px;
+      margin-bottom: var(--space-md);
+      color: var(--color-text-light);
+      text-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    }
+
+    .hero-content h1 .highlight {
+      color: var(--color-accent-teal);
+    }
+
+    .hero-subtitle {
+      font-size: var(--text-lg);
+      color: #e2e8f0;
+      margin-bottom: var(--space-xl);
+      line-height: 1.8;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    }
+
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-lg);
+      margin: var(--space-xl) 0;
+      background: rgba(0, 0, 0, 0.4);
+      padding: var(--space-md);
+      border-radius: 12px;
+      backdrop-filter: blur(5px);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .metric-value {
+      font-size: var(--text-2xl);
+      font-weight: 900;
+      color: var(--color-accent-cyan);
+      font-family: var(--font-mono);
+    }
+
+    .metric-label {
+      font-size: var(--text-xs);
+      color: #cbd5e1;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .cta-group {
+      display: flex;
+      gap: var(--space-md);
+      margin-top: var(--space-xl);
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 0.875rem 1.75rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: var(--text-sm);
+      border: none;
+      cursor: pointer;
+      transition: all var(--transition-smooth);
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .btn-primary {
+      background: var(--color-accent-teal);
+      color: var(--color-primary-dark);
+      box-shadow: var(--shadow-md);
+    }
+
+    .btn-primary:hover {
+      background: #00b399;
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background: rgba(255,255,255,0.1);
+      color: var(--color-text-light);
+      border: 2px solid rgba(255,255,255,0.5);
+      backdrop-filter: blur(4px);
+    }
+
+    .btn-secondary:hover {
+      background: var(--color-text-light);
+      color: var(--color-primary-dark);
+      transform: translateY(-2px);
+    }
+
+    .hero-image img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+      border: 2px solid rgba(255,255,255,0.1);
+    }
+
+    .content-wrapper {
+      /* This wrapper sits below the hero and has a solid background */
+      /* It scrolls up to cover the fixed video */
+      position: relative;
+      background-color: var(--color-neutral-light);
+      z-index: 10;
+      padding-top: var(--space-2xl);
+      box-shadow: 0 -20px 50px rgba(0,0,0,0.2);
+    }
+
+    main {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 var(--space-lg);
+    }
+
+    section {
+      margin-bottom: var(--space-2xl);
+      padding-bottom: var(--space-2xl);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    section h2 {
+      font-size: var(--text-2xl);
+      font-weight: 900;
+      margin-bottom: var(--space-xl);
+      color: var(--color-text-dark);
+      position: relative;
+      display: inline-block;
+    }
+
+    section h2::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 40%;
+      height: 3px;
+      background: var(--color-accent-teal);
+    }
+
+    /* Rest of the typography styling for light sections */
+    p { color: var(--color-neutral-gray); margin-bottom: var(--space-md); }
+    strong { color: var(--color-text-dark); }
+    
+    #about { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2xl); align-items: center; }
+    .about-image img { max-width: 100%; border-radius: 8px; box-shadow: var(--shadow-lg); }
+
+    .timeline-item { display: grid; grid-template-columns: 180px 1fr; gap: var(--space-lg); margin-bottom: var(--space-xl); padding-bottom: var(--space-lg); border-bottom: 1px solid rgba(0,0,0,0.05); }
+    .timeline-date { font-weight: 700; color: var(--color-accent-teal); }
+    .timeline-content h3 { font-size: var(--text-lg); margin-bottom: var(--space-xs); }
+    .timeline-company { color: var(--color-primary-blue); font-weight: 600; margin-bottom: var(--space-sm); }
+    
+    .skill-tags { display: flex; flex-wrap: wrap; gap: var(--space-xs); margin-top: 1rem; }
+    .tag { background: rgba(13, 71, 161, 0.1); color: var(--color-primary-blue); padding: 0.4rem 0.8rem; border-radius: 4px; font-size: var(--text-xs); font-weight: 600; }
+
+    .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-lg); }
+    .skill-category { background: white; padding: var(--space-lg); border-radius: 8px; border-top: 4px solid var(--color-primary-blue); box-shadow: var(--shadow-sm); }
+    .skill-category h3 { margin-bottom: var(--space-md); }
+    .skill-item { font-size: var(--text-sm); color: var(--color-neutral-gray); margin-bottom: 0.5rem; }
+    .skill-item::before { content: '▪'; color: var(--color-accent-teal); margin-right: 8px; }
+
+    @media (max-width: 1024px) {
+      .hero { grid-template-columns: 1fr; height: auto; min-height: 100vh; padding-top: 120px; padding-bottom: 60px; }
+      .metrics-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      #about, .timeline-item { grid-template-columns: 1fr; }
+      .hero-content h1 { font-size: var(--text-2xl); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="video-background-container">
+    <div class="video-overlay"></div>
+    <!-- Using the raw.githubusercontent URL to serve the actual mp4 file -->
+    <video id="earth-video" autoplay loop muted playsinline>
+      <source src="https://raw.githubusercontent.com/Husseim-Stuck-Portfolio/Husseim-Stuck-Portfolio.github.io/main/fotos/video/earth_1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <header id="main-header">
+    <nav>
+      <a href="#" class="logo">Husseim<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li>
+          <a href="mailto:stuck.husseim+githubio@googlemail.com" class="btn btn-primary" style="color:var(--color-primary-dark)">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="hero-section">
+    <div class="hero-content" id="parallax-text">
+      <h1>Data Engineer transforming <span class="highlight">complexity into clarity</span></h1>
+      <p class="hero-subtitle">Specialized in geospatial data, data quality, and large-scale analytics infrastructure across global markets.</p>
+      
+      <div class="metrics-grid">
+        <div class="metric">
+          <div class="metric-value">21.4M+</div>
+          <div class="metric-label">Data Points</div>
+        </div>
+        <div class="metric">
+          <div class="metric-value">62</div>
+          <div class="metric-label">Countries</div>
+        </div>
+      </div>
+
+      <div class="cta-group">
+        <a href="#experience" class="btn btn-primary">Explore My Work</a>
+        <a href="https://github.com/Husseim-Stuck-Portfolio" target="_blank" class="btn btn-secondary">View GitHub</a>
+      </div>
+    </div>
+
+    <div class="hero-image" id="parallax-image">
+      <img src="https://github.com/Husseim-Stuck-Portfolio/Husseim-Stuck-Portfolio.github.io/raw/main/fotos/Stuck_Husseim_Image_1_Formal.png" alt="Husseim Stuck">
+    </div>
+  </section>
+
+  <!-- This wrapper has a solid background and will slide UP over the video -->
+  <div class="content-wrapper">
+    <main>
+      
+      <!-- About Section -->
+      <section id="about">
+        <div class="about-content">
+          <h2>About</h2>
+          <p>I am a Berlin-based <strong>Data Engineer specializing in geospatial data systems, data quality frameworks, and large-scale analytics</strong>. I worked as a Geospatial Data Engineer for a market-leading digital map platform, improving data integrity across global markets.</p>
+          <p>My expertise bridges technical rigor (Python, SQL, Snowflake, Tableau) with research methodology, enabling me to solve complex data challenges in multilingual, international environments.</p>
+        </div>
+        <div class="about-image">
+          <img src="https://github.com/Husseim-Stuck-Portfolio/Husseim-Stuck-Portfolio.github.io/raw/main/fotos/Stuck_Husseim_Image_2_Casual.jpeg" alt="Husseim Stuck - Creative Professional">
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="experience">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">Feb 2023 — Feb 2026</div>
+            <div class="timeline-content">
+              <h3>Geospatial Data Engineer</h3>
+              <div class="timeline-company">Apple (via Akkodis) — Berlin, Germany</div>
+              <p>Improved global data integrity by directly enhancing 21.4M+ data points across 62 countries. Led 11 critical data quality initiatives, implementing early detection systems and reference workflows.</p>
+              <div class="skill-tags">
+                <span class="tag">Python</span>
+                <span class="tag">SQL</span>
+                <span class="tag">Snowflake</span>
+                <span class="tag">Tableau</span>
+                <span class="tag">QGIS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" style="border-bottom: none;">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>📊 Core Data Skills</h3>
+            <div class="skill-item">Data Engineering & Integration</div>
+            <div class="skill-item">Geospatial Data Systems</div>
+            <div class="skill-item">Data Quality & Validation</div>
+          </div>
+          <div class="skill-category">
+            <h3>🐍 Programming & Tools</h3>
+            <div class="skill-item">Python & SQL (Expert)</div>
+            <div class="skill-item">Snowflake</div>
+            <div class="skill-item">Tableau & QGIS</div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const video = document.getElementById('earth-video');
+      const textElement = document.getElementById('parallax-text');
+      const imageElement = document.getElementById('parallax-image');
+      const header = document.getElementById('main-header');
+      
+      // Calculate max scroll depth for the fade effect based on viewport height
+      const fadeEndScroll = window.innerHeight * 0.8; 
+
+      window.addEventListener('scroll', () => {
+        // requestAnimationFrame for performance optimization
+        requestAnimationFrame(() => {
+          const scrollY = window.scrollY;
+
+          // 1. Video Parallax Zoom Effect
+          // Scale starts at 1 and increases as you scroll down
+          // Factor 0.0008 controls the speed/intensity of the zoom
+          const scale = 1 + (scrollY * 0.0008);
+          // Apply scale to the video. Using 3d transform for GPU acceleration
+          video.style.transform = `scale3d(${scale}, ${scale}, 1)`;
+
+          // 2. Text Blending/Disappearing Effect
+          // Calculate opacity: 1 at top, approaches 0 as you scroll down to fadeEndScroll
+          let opacity = 1 - (scrollY / fadeEndScroll);
+          
+          // Prevent negative opacity
+          if (opacity < 0) opacity = 0;
+          
+          // Calculate upward movement to create a dissolving/floating effect
+          const translateY = scrollY * 0.4;
+
+          // Apply opacity and translate to text content
+          textElement.style.opacity = opacity;
+          textElement.style.transform = `translate3d(0, -${translateY}px, 0)`;
+          
+          // Apply a slightly different parallax speed to the image for depth
+          const imgTranslateY = scrollY * 0.2;
+          imageElement.style.opacity = opacity + 0.2; // keep image visible slightly longer
+          imageElement.style.transform = `translate3d(0, -${imgTranslateY}px, 0)`;
+
+          // 3. Header background adjustment
+          if (scrollY > 50) {
+            header.style.background = 'rgba(15, 20, 25, 0.95)';
+            header.style.boxShadow = '0 4px 12px rgba(0,0,0,0.2)';
+          } else {
+            header.style.background = 'rgba(15, 20, 25, 0.6)';
+            header.style.boxShadow = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
